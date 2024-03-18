@@ -14,5 +14,10 @@
             https://transfonter.org/
     stylus
         adding all file but now empty
+    variable for git 
+        alias gadd="git add .; git commit -m"
+        alias gcom="git commit -m"
+        alias gpush="git push origin main"
+
         
 
