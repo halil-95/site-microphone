@@ -1,8 +1,14 @@
-Сперва создаем нужный файлы 
+<h1>Сперва создаем нужный файлы </h1>
     index.html
         подключаем стили
         подключаем скрипты
         созданы блоки и подблоки
         использовано тех БЭМ
+    шрифты
+        DMsans 
+            git clone https://github.com/halil-95/component.git 
+        icon ( fontella)
+            git clone https://github.com/halil-95/component.git 
+
 
 
