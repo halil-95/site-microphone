@@ -4,7 +4,11 @@ header
         display: flex
         text-align: center
         justify-content: space-between
-        padding: 5px 0 
+        padding: 5px 0
+        gap 5px 
+        flex-basis: auto
+        flex-grow: 1
+        flex-shrink: 1
         
         * 
             flex-grow 1
@@ -16,6 +20,7 @@ header
             display flex
             justify-content: center
             align-items: center
+            flex-grow 1
             
             .logo__block
                 text-transform: uppercase
@@ -24,10 +29,11 @@ header
                 font-weight: bold
 
         .empty
-            flex-basis: auto
-            flex-grow 10
-
+            flex-basis 20%
         .nav
-            display flex
-            div 
-                padding: 0 5px
+            flex-grow 2
+            ul
+                display flex
+                li 
+                    padding: 0 5px
+                  

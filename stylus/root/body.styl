@@ -29,6 +29,8 @@ h2, h3
     letter-spacing 2.56px
     line-height 70px
 
+h3 
+    margin: 26px 0
 p
     font-size: $p_sub
     letter-spacing normal
@@ -38,7 +40,11 @@ p
     font-size: $p_but1
 
 .btn2
-    font-size: $p_but2
+    button
+        font-size: $p_but2
+        background:$blue
+        border-radius: 10px
+        padding: 10px 
 
 nav 
 .nav
@@ -56,3 +62,21 @@ span
     text-size-adjust 100%
 img 
     max-width 100%
+
+a 
+    color: unset 
+    all unset
+    transition: opacity .3s
+    cursor: pointer
+    &:hover
+        opacity .7
+
+button
+    font-size: 1.6em
+    padding: 5px 32px;
+    background: rgba($white, .3);
+    color: $white
+
+    &:hover
+        cursor: pointer
+        opacity .7
