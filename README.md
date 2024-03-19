@@ -98,6 +98,11 @@ alias gadd="git add .;git status; git commit -m"
 alias gpush="git push origin main; git status"
 ```
 
+### Связ со мной
+*   [vk](https://vk.com/id691430111 )
+*   [mail](mailto:halilaliyew@gmail.com)
+*   [Telegram](https://t.me/halil_aliyev)
+
 
         
 
