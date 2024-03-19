@@ -134,8 +134,9 @@ nav {
 }
 .container {
   width: 1200px;
-  margin: 0 auto;
+  margin: 2em auto;
   border: 1px solid #f00;
+  border-radius: 1em;
 }
 div {
   border: 1px solid #fff;
@@ -224,12 +225,17 @@ header nav .nav div {
 .hero__block,
 .hero__block__left,
 .image,
-.hero__block__right {
+.hero__block__right,
+.icons {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
   flex-shrink: 1;
+}
+.hero__block {
+  gap: 2em;
+  padding: 0 5px;
 }
 .hero__block__left {
   flex-basis: 40%;
@@ -237,6 +243,57 @@ header nav .nav div {
 .hero__block__right {
   flex-basis: 60%;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+}
+.hero__block__right .text {
+  justify-content: center;
+  align-items: center;
+  padding: 0 6em 0 15px;
+}
+.hero__block__right .text text {
+  position: relative;
+}
+.hero__block__right .text text::after {
+  content: "";
+  background-image: url("https://live.verstaem.online/castaway/img/next.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 11px;
+  bottom: 0;
+  left: 0;
+}
+.icons {
+  flex-direction: column;
+  gap: 1em;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.icons .icons__title {
+  color: #fff;
+  margin-left: 2em;
+}
+.icons .icons__icon ul {
+  display: flex;
+  color: #fff;
+  gap: 1em;
+  margin-left: 2em;
+}
+.icons .icons__icon ul li,
+.icons .icons__icon ul a {
+  color: unset;
+  transition: opacity 0.3s;
+}
+.icons .icons__icon ul li:hover,
+.icons .icons__icon ul a:hover {
+  opacity: 0.5;
+}
+.icons .icons__icon ul .icon_list span.demo-icon {
+  font-size: 2em;
 }
 .partfolio__block {
   display: flex;
