@@ -304,6 +304,9 @@ header nav .nav ul li {
   color: #fff;
   margin-left: 2em;
 }
+.icons .icons__icon {
+  display: flex;
+}
 .icons .icons__icon ul {
   display: flex;
   color: #fff;
@@ -397,4 +400,10 @@ header nav .nav ul li {
 }
 .second .music_tool__block__left {
   order: 2;
+}
+.partfolio__title__cecond ul {
+  display: flex;
+}
+.partfolio__title__cecond ul li.icon_list .demo-icon {
+  font-size: 2em;
 }
