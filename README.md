@@ -36,12 +36,12 @@
     *   добавлено все атрибуты
 
 *   **шрифты**
-    *   DMsans 
+    *   [ DMsans ]('https://fonts.google.com/') 
 ```git
 git clone https://github.com/halil-95/component.git 
 ```
 *
-   icon ( fontella)
+   icon [fontello]('https://fontello.com/') 
     
 
 ```git
