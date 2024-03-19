@@ -86,6 +86,8 @@ git clone https://github.com/halil-95/component.git
             // padding: 15px
             border 1px solid red
             border-radius: 1em
+            ...
+            ....
         ```
         ****
 
