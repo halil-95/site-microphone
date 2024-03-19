@@ -129,17 +129,10 @@ body {
   padding: 5px;
   margin: 15px auto;
 }
-nav {
-  border: 1px solid #ff0;
-}
 .container {
   width: 1200px;
   margin: 2em auto;
-  border: 1px solid #f00;
   border-radius: 1em;
-}
-div {
-  border: 1px solid #fff;
 }
 h1,
 h2,
@@ -171,12 +164,6 @@ p {
 }
 .btn {
   font-size: 1.125em;
-}
-.btn2 button {
-  font-size: 1.0625em;
-  background: #007aff;
-  border-radius: 10px;
-  padding: 10px;
 }
 nav div,
 .nav div {
@@ -213,6 +200,12 @@ button {
 button:hover {
   cursor: pointer;
   opacity: 0.7;
+}
+ul {
+  list-style: none;
+}
+ul li {
+  list-style: none;
 }
 header nav {
   display: flex;
@@ -271,6 +264,9 @@ header nav .nav ul li {
 }
 .hero__block__left {
   flex-basis: 55%;
+}
+.hero__block__left .image img {
+  border-radius: 15px;
 }
 .hero__block__right {
   flex-basis: 45%;
@@ -331,7 +327,7 @@ header nav .nav ul li {
   justify-content: center;
   align-items: center;
   background: #000;
-  border-radius: 15px;
+  border-radius: 10px;
   margin: 60px 5px;
 }
 .music_tool {
@@ -354,23 +350,22 @@ header nav .nav ul li {
   flex-grow: 1;
   flex-shrink: 1;
 }
-.partfolio__title .menu ul {
+.partfolio__title .menu {
   display: flex;
-  border-radius: 15px;
+  border-radius: $bradius;
   gap: 2px;
-  border: 3px solid #f00;
 }
-.partfolio__title .menu ul li {
+.partfolio__title .menu button {
   flex-basis: auto;
   flex-grow: 1;
   flex-shrink: 1;
 }
-.partfolio__title .menu ul li:first-child {
+.partfolio__title .menu button:first-child {
   background: #007aff;
-  border-radius: 15px 0 0 15px;
+  border-radius: 10px 0 0 10px;
 }
-.partfolio__title .menu ul li:last-child {
-  border-radius: 0 15px 15px 0;
+.partfolio__title .menu button:last-child {
+  border-radius: 0 10px 10px 0;
 }
 .music_tool__block__left {
   flex-basis: 40%;
@@ -383,14 +378,23 @@ header nav .nav ul li {
   color: #fff;
   font-family: 'dmSans';
 }
-.music_tool__block__right .btn>button {
+.music_tool__block__right .btn > button {
   font-size: 1.125em;
   border-radius: 10px;
-  padding: 5px;
+  padding: 10px;
+}
+.music_tool__block__right .btn2 > button {
+  font-size: 1.0625em;
+  background: #007aff;
+  border-radius: 10px;
+  padding: 10px 15px;
 }
 .music_tool__block__right .blue_text {
   color: #007aff;
 }
 .music_tool__block__right .blue_text span {
   font-size: 1.125em;
+}
+.second .music_tool__block__left {
+  order: 2;
 }

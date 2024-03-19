@@ -3,7 +3,7 @@
     justify-content center
     align-items center
     background: $black
-    border-radius: 15px
+    border-radius:$br
     margin: 60px 5px 
 
 .music_tool
@@ -25,21 +25,18 @@
         flex-shrink: 1
 
     .menu
-        ul
-            display flex
-            border-radius: $bradius 
-            gap 2px
-            border 3px solid red
-        
-            li 
-                flex-basis auto
-                flex-grow: 1
-                flex-shrink: 1
-                &:first-child
-                    background: rgba($blue)
-                    border-radius: 15px 0 0 15px 
-                &:last-child
-                    border-radius: 0 15px 15px 0 
+        display flex
+        border-radius: $bradius 
+        gap 2px
+        button
+            flex-basis auto
+            flex-grow: 1
+            flex-shrink: 1
+            &:first-child
+                background: rgba($blue)
+                border-radius:$br 0 0$br 
+            &:last-child
+                border-radius: 0 $br $br 0 
 
 .music_tool__block__left
     flex-basis 40%
@@ -52,12 +49,21 @@
     color: white;
     font-family: 'dmSans';
 
-    .btn>button
+    .btn > button
         font-size: $p_but1
+        border-radius: $br
+        padding: $br
+    
+    .btn2 > button
+        font-size: $p_but2
+        background:$blue
         border-radius: 10px
-        padding: 5px
+        padding: 10px 15px
 
     .blue_text
         color: $blue
         span
             font-size: $p_but1
+
+.second .music_tool__block__left
+                order 2
