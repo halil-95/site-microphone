@@ -159,12 +159,12 @@ h2,
 h3 {
   font-size: 4em;
   letter-spacing: 2.56px;
-  line-height: 4.375em;
+  line-height: 70px;
 }
 p {
   font-size: 1.375em;
   letter-spacing: normal;
-  line-height: 2.0625em;
+  line-height: 33px;
 }
 .btn {
   font-size: 1.125em;
@@ -299,4 +299,25 @@ header nav .nav div {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #000;
+  border-radius: 15px;
+}
+.partfolio__title {
+  color: #fff;
+}
+.music_tool {
+  display: flex;
+}
+.music_tool__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.music_tool__block__left {
+  flex-basis: 40%;
+}
+.music_tool__block__right {
+  display: flex;
+  flex-basis: 60%;
+  flex-direction: column;
 }
