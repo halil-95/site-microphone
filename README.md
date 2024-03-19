@@ -71,7 +71,7 @@ git clone https://github.com/halil-95/component.git
         ```
     *   приготавливаем root 
 
-    *  [приготавливаем body ]("https://github.com/halil-95/site-microphone/blob/main/stylus/root/body.styl")
+    *  [приготавливаем body](https://github.com/halil-95/site-microphone/blob/main/stylus/root/body.styl)
  
         ```stylus
         body
