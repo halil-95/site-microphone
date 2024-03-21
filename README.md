@@ -50,7 +50,7 @@ git clone https://github.com/halil-95/component.git
 
 [генератор для фривтоф](https://transfonter.org/)
    
-*   **stylus**
+*   **[stylus](https://stylus-lang.com/docs/executable.html#converting-css)**
     *   adding all file but now empty
     *   приготавливаем переменный 
        
