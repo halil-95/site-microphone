@@ -1,4 +1,16 @@
 # План десйтвие для верстки
+## зависимость сайта
+* **html**
+* **css**
+* **javascript**
+* **Librery**
+    * **[fansybox]('https://fancyapps.com/')**
+    * **[Splide v4](https://splidejs.com/guides/version4/)**
+* **instrumen**
+    * **[Fontello]('https://fontello.com/')**
+
+
+
 ## создаем нужные папки
 *   **папки**
     *   theme_name
