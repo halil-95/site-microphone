@@ -90,13 +90,18 @@ git clone https://github.com/halil-95/component.git
             ....
         ```
         ****
+* далее запускаем команды 
+    ```git 
+    stylus -w --compress stylus.styl -o ../ styly.css
+    ```
+    про [stylus](https://stylus-lang.com/docs/executable.html#stylus-cli#stylus-cli)
 
 
 *   **variable for git** 
-```
-alias gadd="git add .;git status; git commit -m"
-alias gpush="git push origin main; git status"
-```
+    ```
+    alias gadd="git add .;git status; git commit -m"
+    alias gpush="git push origin main; git status"
+    ```
 
 ### Связ со мной
 *   [vk](https://vk.com/id691430111 )
