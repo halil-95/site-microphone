@@ -69,9 +69,9 @@ git clone https://github.com/halil-95/component.git
 
         $bradius = 15px
         ```
-    *   приготавливаем root 
+    *   приготавливаем  [root](https://github.com/halil-95/site-microphone/blob/main/stylus/root/root.styl)
 
-    *  [приготавливаем body](https://github.com/halil-95/site-microphone/blob/main/stylus/root/body.styl)
+    *  приготавливаем [body](https://github.com/halil-95/site-microphone/blob/main/stylus/root/body.styl) 
  
         ```stylus
         body
@@ -90,15 +90,25 @@ git clone https://github.com/halil-95/component.git
             ....
         ```
         ****
+
+ * приготавливаем  [stylus.styl](https://github.com/halil-95/site-microphone/blob/main/stylus/style.styl)
+    ```stylus
+    @import 'root/normilize.styl';
+    @import 'root/root.styl';
+    @import 'root/variable.styl';
+    @import 'root/body.styl';
+        
+    @import 'part/*.styl';
+    ```
 * далее запускаем команды 
-    ```git 
+    ```cmd
     stylus -w --compress stylus.styl -o ../ styly.css
     ```
     про [stylus](https://stylus-lang.com/docs/executable.html#stylus-cli#stylus-cli)
 
 
 *   **variable for git** 
-    ```
+    ```git
     alias gadd="git add .;git status; git commit -m"
     alias gpush="git push origin main; git status"
     ```
