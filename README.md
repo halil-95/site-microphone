@@ -121,6 +121,7 @@ git clone https://github.com/halil-95/component.git
 
 *   **variable for git** 
     ```git
+    alias gs="git status"
     alias gadd="git add .;git status; git commit -m"
     alias gpush="git push origin main; git status"
     ```

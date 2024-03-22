@@ -35,7 +35,7 @@
             </div>
         </nav>
     </header>
-    <main role="main" class="main">
+    <!-- <main role="main" class="main">
         <section class="hero">
             <div class="hero__block container">
                 <div class="hero__block__left">
@@ -137,7 +137,7 @@
         </section>
         <section class="splide codertime_slide">
             <div class="splide__track">
-                <ul class="splide__list">
+                <ul class="splide__list" data-splide-interval="1000">
                     <li class="splide__slide"><img src="dist/image/gallery-1.jpg" alt=""></li>
                     <li class="splide__slide"><img src="dist/image/gallery-1.jpg" alt=""></li>
                     <li class="splide__slide"><img src="dist/image/gallery-1.jpg" alt=""></li>
@@ -176,12 +176,18 @@
         </div>
 
 
-    </main>
+    </main> -->
 </body>
 
 <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script>
-    new Splide('.codertime_slide').mount();
+
+   let mySlide =  new Splide('.codertime_slide', {
+        type: 'loop',
+        autoplay: 'play',
+        perPage: 1,
+    })
+    mySlide.mount();
 </script>
 
 </html>
