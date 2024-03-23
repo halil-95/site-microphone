@@ -9,31 +9,26 @@
         content="website created by codertime.site  design landing page downloaded from the Internet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
-    <link rel="stylesheet" href="dist/font/stylesheet.css">
-    <link rel="stylesheet" href="dist/icon/css/fontello.css">
+    <link rel="stylesheet" href="dist/fonts/font/stylesheet.css">
+    <link rel="stylesheet" href="dist/fonts/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/fonts/font/stylesheet.css">
+    <link rel="stylesheet" href="dist/fonts/font/icon/css/fontello.css">
     <link rel="stylesheet" href="style.css">
     <title title="for portfolio">microphone</title>
 </head>
 
 <body>
     <header>
-        <nav class="container">
-            <div class="logo">
-                <div class="logo__block">
-                    codertime
-                </div>
+        <div class="topnav">
+            <div class="topnav__logo"><a href="https://codertime.site">codertime</a></div>
+            <div class="topnav__menu menu">
+                <div class="menu__list menu__list_active"><a href="#">home</a></div>
+                <div class="menu__list"><a href="#">episocdes</a></div>
+                <div class="menu__list"><a href="#">about</a></div>
+                <div class="menu__list"><a href="#">cantact</a></div>
             </div>
-            <div class="empty"></div>
-            <div class="nav">
-                <ul>
-                    <li><a href="#">some text</a></li>
-                    <li><a href="#">some text</a></li>
-                    <li><a href="#">some text</a></li>
-                    <li><a href="#">some text</a></li>
-                    <li><a href="#">some text</a></li>
-                </ul>
-            </div>
-        </nav>
+        </div>
+
     </header>
     <!-- <main role="main" class="main">
         <section class="hero">
@@ -182,12 +177,21 @@
 <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script>
 
-   let mySlide =  new Splide('.codertime_slide', {
+    let mySlide = new Splide('.codertime_slide', {
         type: 'loop',
         autoplay: 'play',
         perPage: 1,
     })
     mySlide.mount();
+
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
 </script>
 
 </html>

@@ -1,39 +1,43 @@
-
 header
-    nav
-        display: flex
-        text-align: center
-        justify-content: space-between
-        padding: 5px 0
-        gap 5px 
-        flex-basis: auto
-        flex-grow: 1
-        flex-shrink: 1
+    margin: 10px
+    font-family: dmsans
+    padding: 0 5px
+    // *
+    //     border 1px solid white
+.topnav, .topnav__menu
+    display flex 
+    text-transform uppercase
+    color $white
+    justify-content: space-between
+    position relative  
+
+.topnav:after 
+    content: ""
+    position absolute
+    background: red
+    width: 50px
+    height: 50px
+    right: 0;
+    top: 0;
+    display: none
+
+.topnav__logo
+    font-size: 2em
+
+.topnav__menu
+    gap: 15px
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+
+    .menu__list
+        justify-content: center
+        padding: 5px  10px;
         
-        * 
-            flex-grow 1
-            justify-content: center
-            align-items: center
-            flex-shrink: 1
+    .menu__list_active
+        color black
+        background: white  
 
-        .logo 
-            display flex
-            justify-content: center
-            align-items: center
-            flex-grow 1
-            
-            .logo__block
-                text-transform: uppercase
-                font-size: 2em
-                color $white
-                font-weight: bold
+@media screen and (max-width size1){
 
-        .empty
-            flex-basis 20%
-        .nav
-            flex-grow 2
-            ul
-                display flex
-                li 
-                    padding: 0 5px
-                  
+}
